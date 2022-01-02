@@ -1,0 +1,31 @@
+<%- include("../partials/header") %> 
+<%- include("../partials/navbar") %> 
+
+<main class="container">
+ 
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <%- include("../partials/flash") %> 
+            <div class="display-6">Sign Up</div>
+            <form action="/register" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">User Name</label>
+                    <input type="text" class="form-control" name="username" id="username" placeholder="User Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-Mail</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="E-Mail">
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">PassWord</label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="PassWord" >
+                </div>
+                <button type="submit" class="btn btn-success btn-small">SignUp</button>
+            </form>
+        </div>
+    </div>
+
+</main>
+
+
+<%- include("../partials/footer") %> 
