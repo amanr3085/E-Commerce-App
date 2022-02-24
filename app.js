@@ -83,7 +83,7 @@ app.get('/error',(req,res)=>{
 
 
 
-
-app.listen(process.env.PORT || 2024,(req,res)=>{
-    console.log('Server Running at port 2024');
+var PORT = process.env.PORT || 2024;
+app.listen(PORT,(req,res)=>{
+    console.log(`Server Running at port ${PORT}`);
 })
